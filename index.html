@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0b">
+<title>Gianluca Antonelli | Personal Trainer a Roma Ostiense · Pacchetti da 40 €</title>
+<meta name="description" content="Scheda di allenamento personalizzata, consigli alimentari se li vuoi e da 0 a 5 sessioni con il personal trainer. Pacchetti di 4 settimane da 40 €, con assistenza WhatsApp. Sede di riferimento: McFIT Roma Ostiense.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Gianluca Antonelli | Personal Trainer a Roma Ostiense">
+<meta property="og:description" content="Allenati con un piano, non a caso. 12 pacchetti di 4 settimane, da 40 €.">
+<meta property="og:url" content="https://salvatoremktg-git-hub.github.io/gianluca-antonelli/">
+<meta property="og:image" content="https://salvatoremktg-git-hub.github.io/gianluca-antonelli/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/archivo-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+@font-face{font-family:Archivo;src:url(assets/fonts/archivo-variable-latin.woff2) format('woff2');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+:root{
+  --nero:#0a0a0b;--antracite:#141517;--antracite-2:#1d1f22;--linea:#2e3136;
+  --bianco:#f6f6f3;--testo:#c6c8cc;--tenue:#94979d;
+  --giallo:#ffd400;--giallo-2:#ffe14d;
+  --gutter:clamp(20px,5vw,48px);--max:1200px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--nero);color:var(--testo);font:400 1.0625rem/1.55 Archivo,system-ui,-apple-system,sans-serif;overflow-x:clip;-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p,ul,figure{margin:0}
+ul{padding:0;list-style:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+[id]{scroll-margin-top:76px}
+:focus-visible{outline:3px solid var(--giallo);outline-offset:3px;border-radius:2px}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.salta{position:absolute;left:12px;top:-60px;z-index:60;background:var(--giallo);color:#000;padding:10px 14px;font-weight:700}
+.salta:focus{top:12px}
+
+/* Tipografia */
+.display{font-weight:900;font-stretch:62%;text-transform:uppercase;line-height:.92;letter-spacing:-.005em;color:var(--bianco)}
+h2.display{font-size:clamp(2.9rem,11vw,5.5rem)}
+.occhiello{display:flex;align-items:center;gap:10px;font-size:.8125rem;font-weight:700;font-stretch:112%;letter-spacing:.09em;text-transform:uppercase;color:var(--giallo);margin-bottom:18px}
+.occhiello::before{content:"";width:22px;height:4px;background:var(--giallo);transform:skewX(-24deg)}
+.giallo{color:var(--giallo)}
+.a-capo{display:block}
+.intro{font-size:1.1875rem;max-width:40em;margin-top:20px}
+.sezione{padding-block:clamp(72px,12vw,136px)}
+
+/* Bottoni */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 26px;font-weight:800;font-stretch:88%;font-size:1.0625rem;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;text-align:center;border:2px solid transparent;transition:transform .25s var(--ease),background-color .2s,color .2s,border-color .2s}
+.btn:active{transform:scale(.98)}
+.btn-giallo{background:var(--giallo);color:#000}
+.btn-nero{background:#000;color:var(--bianco)}
+.btn-linea{border-color:#55585e;color:var(--bianco)}
+@media (hover:hover){
+  .btn-giallo:hover{background:var(--giallo-2);transform:translateY(-2px)}
+  .btn-nero:hover{background:#26282b;transform:translateY(-2px)}
+  .btn-linea:hover{border-color:var(--giallo);color:var(--giallo)}
+}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Barra alta */
+.barra{position:sticky;top:0;z-index:40;background:rgba(10,10,11,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07);padding-top:env(safe-area-inset-top)}
+.barra .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.marchio{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;font-stretch:62%;font-size:1.4375rem;text-transform:uppercase;color:var(--bianco);line-height:1;white-space:nowrap}
+.marchio i{width:8px;height:22px;background:var(--giallo);transform:skewX(-14deg)}
+.barra nav{display:flex;align-items:center;gap:30px;font-size:.9375rem;font-weight:600}
+.barra nav a:not(.btn){display:none;text-decoration:none;color:var(--testo);transition:color .2s}
+.barra nav a:not(.btn):hover{color:var(--giallo)}
+.barra .btn{min-height:42px;padding:8px 16px;font-size:.9375rem}
+
+/* Hero */
+.hero{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:calc(100svh - 60px);overflow:hidden;background:var(--nero)}
+.hero-foto{position:absolute;inset:0 0 auto 0;height:62svh;overflow:hidden}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:52% 0}
+.hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.4) 0,rgba(10,10,11,0) 18%,rgba(10,10,11,0) 40%,rgba(10,10,11,.86) 66%,var(--nero) 82%)}
+.hero-testo{position:relative;padding-bottom:30px;padding-top:37svh}
+.hero .occhiello{font-size:.75rem;font-stretch:100%;letter-spacing:.05em;margin-bottom:10px;white-space:nowrap}
+.hero h1{font-size:min(21.5vw,6.5rem);line-height:.86}
+.hero h1 span{display:block}
+.hero h1 span+span{color:var(--giallo)}
+.hero-tag{margin-top:18px;font-size:clamp(1.3125rem,5.4vw,1.75rem);font-weight:700;line-height:1.2;color:var(--bianco)}
+.hero-sub{margin-top:20px;max-width:33em}
+.hero-cta{display:grid;gap:10px;margin-top:20px}
+.hero-fatti{display:grid;grid-template-columns:repeat(3,1fr);margin-top:24px;border-top:1px solid var(--linea)}
+.hero-fatti li{padding:12px 10px 0 0;font-size:.8125rem;line-height:1.25}
+.hero-fatti b{display:block;font-weight:900;font-stretch:62%;font-size:1.625rem;line-height:1.1;text-transform:uppercase;color:var(--bianco)}
+
+/* Nastro */
+.nastro{overflow:hidden;background:var(--giallo);color:#000;padding-block:11px}
+.nastro div{display:flex;width:max-content;animation:scorri 34s linear infinite}
+.nastro span{font-weight:900;font-stretch:62%;font-size:1.3125rem;text-transform:uppercase;white-space:nowrap;padding-right:2.4em;line-height:1}
+@keyframes scorri{to{transform:translateX(-50%)}}
+
+/* Chi sono */
+.chi{display:grid;gap:36px}
+.chi-foto{position:relative;max-width:440px}
+.chi-foto img{width:100%;aspect-ratio:1;object-fit:cover}
+.chi-foto::after{content:"";position:absolute;right:-12px;bottom:-12px;width:42%;height:42%;border-right:6px solid var(--giallo);border-bottom:6px solid var(--giallo)}
+.chi-lista{display:grid;gap:0;margin-top:26px;border-top:1px solid var(--linea)}
+.chi-lista li{display:flex;gap:12px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--linea);color:var(--bianco);font-weight:600}
+.chi-lista li::before{content:"";flex:none;width:12px;height:4px;background:var(--giallo);transform:translateY(-4px) skewX(-24deg)}
+.chi-fonte{margin-top:18px;font-size:.9375rem}
+.chi-fonte a{color:var(--bianco);text-underline-offset:3px}
+
+/* A o B */
+.ab{background:var(--antracite)}
+.ab-griglia{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:36px}
+.ab-card{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:20px 16px;background:var(--antracite-2);border:1px solid var(--linea);text-align:left;transition:border-color .2s,transform .25s var(--ease)}
+.ab-lettera{font-weight:900;font-stretch:62%;font-size:clamp(4.5rem,20vw,7rem);line-height:.8;color:var(--giallo)}
+.ab-card h3{font-size:1.125rem;font-weight:800;line-height:1.2;color:var(--bianco);min-height:4.2em}
+.ab-card h3 em{font-style:normal;color:var(--giallo);display:block}
+.ab-da{font-size:.9375rem;margin-top:auto}
+.ab-da b{display:block;font-weight:900;font-stretch:62%;font-size:2.25rem;line-height:1;color:var(--bianco)}
+.ab-vai{font-weight:800;font-size:.9375rem;color:var(--giallo);text-decoration:underline;text-underline-offset:4px;padding-block:8px}
+@media (hover:hover){.ab-card:hover{border-color:var(--giallo);transform:translateY(-3px)}}
+.ab-uguale{margin-top:28px;padding-top:20px;border-top:1px solid var(--linea)}
+.ab-uguale h3{font-size:.8125rem;font-weight:700;font-stretch:112%;letter-spacing:.09em;text-transform:uppercase;color:var(--bianco);margin-bottom:12px}
+.ab-uguale ul{display:flex;flex-wrap:wrap;gap:8px}
+.ab-uguale li{padding:7px 12px;border:1px solid var(--linea);font-size:.9375rem;color:var(--bianco)}
+.ab-nota{margin-top:18px;font-size:.9375rem;max-width:46em}
+
+/* Configuratore */
+.config{display:grid;gap:30px;margin-top:40px}
+.config fieldset{border:0;margin:0;padding:0;min-width:0}
+.config legend{display:block;padding:0;margin-bottom:12px;font-weight:800;font-size:1.0625rem;color:var(--bianco)}
+.config legend span{color:var(--giallo);margin-right:6px}
+.passi{display:grid;gap:28px;align-content:start}
+.scelta input{position:absolute;opacity:0;width:1px;height:1px}
+.linee{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.linee label{display:block;height:100%;padding:14px;background:var(--antracite-2);border:2px solid var(--linea);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}
+.linee b{display:block;font-weight:900;font-stretch:62%;font-size:2.25rem;line-height:1;color:var(--bianco)}
+.linee small{display:block;margin-top:6px;font-size:.9375rem;line-height:1.25}
+input:checked+label{border-color:var(--giallo);background:var(--giallo);color:#000}
+input:checked+label b,input:checked+label small,input:checked+label .ses-n,input:checked+label .ses-p{color:#000}
+input:focus-visible+label{outline:3px solid var(--bianco);outline-offset:2px}
+.sessioni{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sessioni label{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:84px;padding:12px 4px;background:var(--antracite-2);border:2px solid var(--linea);cursor:pointer;text-align:center;transition:border-color .15s,background-color .15s}
+.ses-n{font-weight:900;font-stretch:62%;font-size:2.25rem;line-height:1;color:var(--bianco)}
+.ses-p{font-size:.9375rem;font-weight:600;color:var(--testo);font-variant-numeric:tabular-nums}
+@media (hover:hover){.linee label:hover,.sessioni label:hover{border-color:var(--giallo)}}
+.ses-tag{position:absolute;top:-1px;right:-1px;width:12px;height:12px;background:var(--giallo);clip-path:polygon(0 0,100% 0,100% 100%);display:none}
+.equilibrata .ses-tag{display:block}
+input:checked+label .ses-tag{background:#000}
+.legenda{display:none;gap:8px;align-items:center;margin-top:10px;font-size:.875rem}
+.legenda i{width:12px;height:12px;background:var(--giallo);clip-path:polygon(0 0,100% 0,100% 100%);flex:none}
+.legenda.vista{display:flex}
+
+/* Scontrino del pacchetto */
+.risultato{background:var(--giallo);color:#000;padding:24px 20px 20px}
+.ris-testa{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;min-height:28px}
+.ris-etichetta{font-size:.8125rem;font-weight:700;font-stretch:112%;letter-spacing:.09em;text-transform:uppercase}
+.ris-badge{background:#000;color:var(--giallo);padding:5px 10px;font-size:.8125rem;font-weight:800;font-stretch:88%;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
+.ris-riga{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-top:6px}
+.ris-codice,.ris-prezzo{font-weight:900;font-stretch:62%;line-height:.85;font-size:clamp(5.25rem,25vw,7.75rem);font-variant-numeric:tabular-nums}
+.ris-durata{text-align:right;font-weight:700;font-size:.9375rem;margin-top:8px}
+.ris-lista{margin-top:18px;border-top:2px solid #000}
+.ris-lista li{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid rgba(0,0,0,.25);font-weight:600;line-height:1.3}
+.ris-lista svg{width:18px;height:18px;flex:none;margin-top:1px}
+.ris-lista .no{opacity:.62;font-weight:500}
+.risultato .btn{width:100%;margin-top:18px}
+.ris-mosse{display:grid;gap:6px;margin-top:14px}
+.ris-mosse button{display:flex;justify-content:space-between;gap:12px;width:100%;padding:11px 0;text-align:left;font-size:.9375rem;font-weight:600;line-height:1.25;color:#000;border-bottom:1px solid rgba(0,0,0,.25)}
+.ris-mosse button b{white-space:nowrap;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.ris-mosse button:focus-visible{outline-color:#000}
+.ris-editoriale{margin-top:12px;font-size:.875rem;line-height:1.35}
+
+/* Tabella */
+.listino{margin-top:64px}
+.listino h3{font-weight:900;font-stretch:62%;text-transform:uppercase;font-size:2.25rem;line-height:1;color:var(--bianco)}
+.listino p{margin-top:8px}
+.tabella{width:100%;margin-top:20px;border-collapse:collapse;table-layout:fixed}
+.tabella caption{text-align:left}
+.tabella th,.tabella td{padding:0;border-bottom:1px solid var(--linea);text-align:left;font-weight:500}
+.tabella thead th{padding:10px 8px;font-size:.875rem;line-height:1.2;color:var(--bianco);font-weight:700;vertical-align:bottom}
+.tabella tbody th{padding:6px 8px 6px 0;color:var(--bianco);font-size:.9375rem;font-weight:600;line-height:1.2}
+.cella{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;width:100%;min-height:56px;padding:12px 8px;text-align:left;transition:background-color .15s,color .15s}
+.cella small{font-size:.8125rem;color:var(--tenue);font-weight:600}
+.cella b{font-weight:900;font-stretch:62%;font-size:1.625rem;line-height:1;color:var(--bianco);font-variant-numeric:tabular-nums}
+.cella[aria-pressed=true]{background:var(--giallo)}
+.cella[aria-pressed=true] b,.cella[aria-pressed=true] small{color:#000}
+@media (hover:hover){.cella:hover{background:var(--antracite-2)}.cella[aria-pressed=true]:hover{background:var(--giallo)}}
+.tabella-nota{margin-top:14px;font-size:.9375rem}
+.azioni-listino{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+
+/* Come funziona */
+.come{background:var(--antracite)}
+.passi-come{display:grid;gap:0;margin-top:40px;border-top:1px solid var(--linea)}
+.passi-come li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:24px 0;border-bottom:1px solid var(--linea)}
+.passi-come i{font-style:normal;font-weight:900;font-stretch:62%;font-size:3.25rem;line-height:.9;color:var(--giallo)}
+.passi-come h3{font-size:1.25rem;font-weight:800;line-height:1.2;color:var(--bianco);margin-bottom:6px}
+.assistenza{display:grid;gap:10px;margin-top:40px}
+.assistenza>div{padding:22px 20px;background:var(--antracite-2);border-left:6px solid var(--giallo)}
+.assistenza>div+div{border-left-color:#5a5d63}
+.assistenza h3{font-size:1.25rem;font-weight:800;line-height:1.2;color:var(--bianco);margin-bottom:6px}
+.assistenza span{display:block;margin-bottom:8px;font-size:.8125rem;font-weight:700;font-stretch:112%;letter-spacing:.09em;text-transform:uppercase;color:var(--giallo)}
+.assistenza>div+div span{color:var(--testo)}
+
+/* Galleria */
+.galleria-testa{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px}
+.galleria{display:grid;grid-auto-flow:column;grid-auto-columns:74vw;gap:10px;margin-top:32px;padding-inline:var(--gutter);overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);scrollbar-width:none}
+.galleria::-webkit-scrollbar{display:none}
+.galleria a{display:block;scroll-snap-align:start;overflow:hidden;background:var(--antracite-2)}
+.galleria img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .7s var(--ease)}
+@media (hover:hover){.galleria a:hover img{transform:scale(1.04)}}
+
+/* FAQ */
+.faq{background:var(--antracite)}
+.faq-griglia{display:grid;gap:32px}
+.faq details{border-bottom:1px solid var(--linea)}
+.faq details:first-child{border-top:1px solid var(--linea)}
+.faq summary{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:60px;padding-block:14px;font-weight:700;font-size:1.0625rem;line-height:1.3;color:var(--bianco);cursor:pointer;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:14px;height:14px;background:linear-gradient(var(--giallo),var(--giallo)) center/100% 3px no-repeat,linear-gradient(var(--giallo),var(--giallo)) center/3px 100% no-repeat;transition:transform .25s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding-bottom:20px;max-width:42em}
+
+/* Finale */
+.finale{background:var(--giallo);color:#000;padding-block:clamp(64px,11vw,120px)}
+.finale h2{font-weight:900;font-stretch:62%;text-transform:uppercase;font-size:clamp(3.25rem,14vw,7.5rem);line-height:.88;color:#000}
+.finale p{margin-top:16px;font-size:1.1875rem;font-weight:500;max-width:32em}
+.finale-cta{display:grid;gap:10px;margin-top:26px}
+.finale .btn-linea{border-color:#000;color:#000}
+@media (hover:hover){.finale .btn-linea:hover{background:#000;color:var(--giallo);border-color:#000}}
+
+/* Piede */
+.piede{padding-block:36px;font-size:.9375rem}
+.piede-su{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between}
+.piede-link{display:flex;flex-wrap:wrap;gap:6px 22px}
+.piede-link a,.piede-link button{min-height:44px;display:inline-flex;align-items:center;color:var(--bianco);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.piede small{display:block;margin-top:20px;font-size:.875rem;line-height:1.45;color:var(--tenue);max-width:60em}
+
+/* Barra mobile */
+.fissa{position:fixed;inset:auto 0 0 0;z-index:45;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px var(--gutter) calc(10px + env(safe-area-inset-bottom));background:rgba(20,21,23,.96);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--linea);transform:translateY(110%);transition:transform .32s var(--ease);visibility:hidden}
+.fissa.su{transform:none;visibility:visible}
+.fissa-info{min-width:0;font-size:.8125rem;line-height:1.2}
+.fissa-info b{display:block;font-weight:900;font-stretch:62%;font-size:1.5rem;line-height:1.05;color:var(--bianco);text-transform:uppercase;white-space:nowrap}
+.fissa .btn{min-height:48px;padding:10px 16px;font-size:.9375rem;flex:none}
+
+/* Avviso */
+.avviso{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));z-index:50;width:min(92vw,420px);padding:13px 16px;background:var(--bianco);color:#000;font-weight:600;font-size:.9375rem;line-height:1.3;text-align:center;transform:translate(-50%,16px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s var(--ease)}
+.avviso.su{opacity:1;transform:translate(-50%,0)}
+
+/* Animazioni */
+.js .svela{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0s)}
+.js .svela.in{opacity:1;transform:none}
+.hero-foto img{animation:zoom 1.6s var(--ease) both}
+@keyframes zoom{from{transform:scale(1.07)}to{transform:none}}
+.hero h1 span{animation:sale .9s var(--ease) both}
+.hero h1 span+span{animation-delay:.1s}
+@keyframes sale{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.ris-pulsa{animation:pulsa .34s var(--ease)}
+@keyframes pulsa{from{transform:translateY(5px);opacity:.45}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .svela{opacity:1;transform:none}
+}
+
+.solo-stampa{display:none}
+
+/* Da tablet in su */
+@media (min-width:600px){
+  .hero-cta,.finale-cta{display:flex;flex-wrap:wrap}
+  .ab-card{padding:28px}
+  .ab-card h3{font-size:1.375rem;min-height:0}
+  .sessioni{grid-template-columns:repeat(6,1fr)}
+  .galleria{grid-auto-columns:42vw}
+  .assistenza{grid-template-columns:1fr 1fr}
+  .cella{padding-inline:14px}
+}
+@media (min-width:900px){
+  .barra nav a:not(.btn){display:inline}
+  .fissa{display:none}
+  .hero{min-height:calc(100svh - 60px);justify-content:center}
+  .hero-foto{inset:0 0 0 auto;width:56%;height:100%}
+  .hero .occhiello{font-size:.8125rem;margin-bottom:18px}
+  .hero-foto img{object-position:50% 12%}
+  .hero-foto::after{background:linear-gradient(90deg,var(--nero) 0,rgba(10,10,11,0) 34%),linear-gradient(180deg,rgba(10,10,11,.4) 0,rgba(10,10,11,0) 24%,rgba(10,10,11,0) 74%,var(--nero) 100%)}
+  .hero-testo{padding-block:64px}
+  .hero-testo>*{max-width:min(600px,42vw)}
+  .hero h1{font-size:clamp(5.5rem,10vw,9rem);max-width:none}
+  .hero-fatti{max-width:520px}
+  .chi{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:center}
+  .ab-griglia{gap:16px}
+  .config{grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:56px;align-items:start}
+  .risultato{position:sticky;top:84px;padding:28px}
+  .ris-codice,.ris-prezzo{font-size:7rem}
+  .passi-come{grid-template-columns:repeat(3,1fr);gap:32px;border-top:0}
+  .passi-come li{display:block;border-top:4px solid var(--giallo);border-bottom:0}
+  .passi-come i{display:block;margin-bottom:18px}
+  .galleria{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);padding-inline:0;overflow:visible;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+  .faq-griglia{grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:64px}
+  .finale .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:end}
+  .finale-cta{flex-direction:column}
+  .finale-cta .btn{width:100%}
+}
+/* Sotto i 900px la barra fissa non deve coprire il fondo pagina */
+@media (max-width:899px){.piede{padding-bottom:calc(100px + env(safe-area-inset-bottom))}}
+
+/* Stampa / PDF */
+@media print{
+  @page{size:A4;margin:14mm}
+  :root{--bianco:#000;--testo:#222;--tenue:#444;--linea:#bbb;--giallo:#000}
+  html{scroll-behavior:auto}
+  body{background:#fff;color:#222;font-size:10.5pt;line-height:1.4;overflow:visible}
+  .barra,.nastro,.fissa,.avviso,.galleria-sez,.config,.chi-foto,.hero-cta,.azioni-listino,.finale-cta,.piede-link,.ab-vai,.salta,.hero-sub,.js-solo,#pacchetti .wrap>.svela:first-child{display:none!important}
+  .js .svela{opacity:1!important;transform:none!important}
+  *{animation:none!important;transition:none!important}
+  .wrap{max-width:none;padding-inline:0}
+  .sezione{padding-block:14pt}
+  .ab,.come,.faq,.finale,.hero{background:#fff!important;color:#222}
+  .solo-stampa{display:block}
+  .hero{display:block;min-height:0;overflow:visible;border-bottom:3pt solid #000;padding-bottom:12pt}
+  .hero-foto{position:static;float:right;width:42mm;height:50mm;margin-left:8mm}
+  .hero-foto::after{display:none}
+  .hero-testo{padding:0}
+  .hero h1{font-size:40pt;line-height:.95}
+  .hero h1 span+span{color:#000}
+  .hero-tag{font-size:13pt}
+  .hero-fatti{display:flex;gap:16pt;margin-top:8pt;border:0}
+  .hero-fatti li{padding:0;font-size:8.5pt}
+  .hero-fatti b{font-size:14pt}
+  h2.display,.finale h2{font-size:24pt;line-height:1;color:#000}
+  .occhiello{margin-bottom:4pt;font-size:8pt}.occhiello::before{display:none}
+  .intro{font-size:10.5pt;margin-top:4pt}
+  .chi{display:block}
+  .chi-lista{grid-template-columns:1fr 1fr;margin-top:8pt;column-gap:16pt}
+  .chi-lista li{padding:3pt 0;font-size:9.5pt}
+  .chi-lista li::before{background:#000}
+  .chi-fonte{font-size:9pt;margin-top:6pt}
+  .ab-griglia{margin-top:10pt;break-inside:avoid}
+  .ab-card{background:#fff;border:1pt solid #000;padding:10pt;gap:4pt}
+  .ab-lettera{font-size:30pt}
+  .ab-card h3{font-size:11pt;min-height:0}
+  .ab-card h3 em{color:#000}
+  .ab-da b{font-size:18pt}
+  .ab-uguale{margin-top:10pt;padding-top:8pt}.ab-uguale li{font-size:9pt;padding:2pt 6pt}
+  .ab-nota{font-size:9pt;margin-top:6pt}
+  .listino{margin-top:10pt;break-inside:avoid}
+  .listino h3{font-size:18pt}
+  .tabella thead th{padding:4pt 6pt;font-size:9pt}
+  .tabella tbody th{font-size:10pt;padding:0}
+  .cella{min-height:0;padding:4pt 6pt}
+  .cella b{font-size:14pt;color:#000}
+  .cella small{color:#444;font-size:9pt}
+  .cella[aria-pressed=true]{background:#fff}
+  .tabella-nota{font-size:9pt}
+  .passi-come{display:grid;grid-template-columns:repeat(3,1fr);gap:12pt;margin-top:8pt;border:0;break-inside:avoid}
+  .passi-come li{display:block;padding:6pt 0 0;border-top:2pt solid #000;border-bottom:0}
+  .passi-come i{font-size:18pt;color:#000}
+  .passi-come h3{font-size:11pt}.passi-come p{font-size:9.5pt}
+  .assistenza{grid-template-columns:1fr 1fr;margin-top:10pt;break-inside:avoid}
+  .assistenza>div{background:#fff;border:1pt solid #000;padding:8pt}
+  .assistenza h3{font-size:11pt}.assistenza p{font-size:9.5pt}
+  .assistenza span,.assistenza>div+div span{color:#444;font-size:8pt}
+  .faq-griglia{display:block}
+  .faq details{break-inside:avoid}
+  .faq details:first-child{margin-top:8pt}
+  .faq summary{min-height:0;padding-block:4pt;font-size:10pt}
+  .faq summary::after{display:none}
+  .faq details p{padding-bottom:6pt;font-size:9.5pt}
+  .finale{padding-block:12pt;border-top:3pt solid #000;break-inside:avoid}
+  .finale .wrap{display:block}
+  .finale p{font-size:10.5pt;margin-top:4pt}
+  .contatti-stampa{margin-top:6pt;font-weight:700}
+  .piede{padding-block:8pt;font-size:8pt}
+  .piede small{margin-top:0;font-size:8pt;color:#444}
+}
+</style>
+</head>
+<body id="top">
+<a class="salta" href="#pacchetti">Vai ai pacchetti</a>
+
+<header class="barra">
+  <div class="wrap">
+    <a class="marchio" href="#top"><i aria-hidden="true"></i>Gianluca Antonelli</a>
+    <nav aria-label="Principale">
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#differenze">A o B</a>
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#domande">Domande</a>
+      <a class="btn btn-giallo" href="#pacchetti">Pacchetti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <picture class="hero-foto">
+      <img src="assets/img/hero-1200.webp" srcset="assets/img/hero-720.webp 720w, assets/img/hero-1200.webp 1200w" sizes="(min-width:900px) 56vw, 100vw" width="1409" height="1647" alt="Gianluca Antonelli in palestra, in posa con il braccio sinistro contratto" fetchpriority="high">
+    </picture>
+    <div class="wrap hero-testo">
+      <p class="occhiello">Personal trainer · McFIT Roma Ostiense</p>
+      <h1 class="display"><span>Gianluca</span><span>Antonelli</span></h1>
+      <p class="hero-tag">Allenati con un piano, non a caso.</p>
+      <div class="hero-cta">
+        <a class="btn btn-giallo" href="#pacchetti">Scopri i pacchetti</a>
+        <a class="btn btn-linea" data-contatto="generico" href="https://www.instagram.com/gianlucaantonelli.pt/" target="_blank" rel="noopener"><span data-contatto-testo>Scrivimi su Instagram</span></a>
+      </div>
+      <p class="hero-sub">Una scheda fatta per te, i consigli alimentari se li vuoi e, se ti servono, da 1 a 5 sessioni insieme. Scegli tu quanto supporto avere.</p>
+      <ul class="hero-fatti">
+        <li><b>4 settimane</b>ogni pacchetto</li>
+        <li><b>Da 40 €</b>12 pacchetti</li>
+        <li><b>WhatsApp</b>assistenza inclusa</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="nastro" aria-hidden="true"><div>
+    <span>Scheda personalizzata</span><span>Consigli alimentari</span><span>Da 0 a 5 sessioni PT</span><span>Assistenza WhatsApp</span><span>4 settimane</span>
+    <span>Scheda personalizzata</span><span>Consigli alimentari</span><span>Da 0 a 5 sessioni PT</span><span>Assistenza WhatsApp</span><span>4 settimane</span>
+  </div></div>
+
+  <section class="sezione" id="chi-sono">
+    <div class="wrap chi">
+      <figure class="chi-foto svela">
+        <img src="assets/img/chi-sono-631.webp" width="631" height="631" loading="lazy" decoding="async" alt="Ritratto di Gianluca Antonelli in maglietta bianca, a braccia conserte, in sala pesi">
+      </figure>
+      <div class="svela">
+        <p class="occhiello">Chi sono</p>
+        <h2 class="display">Chi ti allena conta quanto <span class="giallo a-capo">la scheda.</span></h2>
+        <p class="intro">Sono Gianluca Antonelli, personal trainer e dottore in Scienze Motorie. Alleno dal vivo a Roma, con sede di riferimento McFIT Roma Ostiense, e seguo anche chi preferisce il coaching online.</p>
+        <ul class="chi-lista">
+          <li>Dottore in Scienze Motorie</li>
+          <li>Allenamento dal vivo</li>
+          <li>Coaching online</li>
+          <li>Programmi personalizzati e consulenza</li>
+        </ul>
+        <p class="chi-fonte">Oltre 26.000 persone mi seguono su <a href="https://www.instagram.com/gianlucaantonelli.pt/" target="_blank" rel="noopener">Instagram</a>: lì trovi anche il mio lavoro di ogni giorno.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione ab" id="differenze">
+    <div class="wrap">
+      <div class="svela">
+        <p class="occhiello">A o B?</p>
+        <h2 class="display">Una sola differenza: <span class="giallo a-capo">i consigli alimentari.</span></h2>
+      </div>
+      <div class="ab-griglia svela">
+        <article class="ab-card">
+          <span class="ab-lettera" aria-hidden="true">A</span>
+          <h3>Linea A: allenamento <em>+ consigli alimentari</em></h3>
+          <p class="ab-da"><b>Da 70 €</b>4 settimane</p>
+          <button class="ab-vai" type="button" data-scegli-linea="A">Configura la linea A</button>
+        </article>
+        <article class="ab-card">
+          <span class="ab-lettera" aria-hidden="true">B</span>
+          <h3>Linea B: solo allenamento <em>senza parte alimentare</em></h3>
+          <p class="ab-da"><b>Da 40 €</b>4 settimane</p>
+          <button class="ab-vai" type="button" data-scegli-linea="B">Configura la linea B</button>
+        </article>
+      </div>
+      <div class="ab-uguale svela">
+        <h3>Uguale in tutte e due</h3>
+        <ul>
+          <li>Scheda personalizzata</li>
+          <li>Da 0 a 5 sessioni PT</li>
+          <li>Assistenza WhatsApp</li>
+          <li>4 settimane</li>
+        </ul>
+        <p class="ab-nota">A parità di sessioni, la linea A costa da 20 a 30 € in più. Include un piano con consigli alimentari: non è una dieta personalizzata né un piano dietetico clinico.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione" id="pacchetti">
+    <div class="wrap">
+      <div class="svela">
+        <p class="occhiello">Pacchetti</p>
+        <h2 class="display">Componi il tuo <span class="giallo">in due scelte.</span></h2>
+      </div>
+
+      <div class="config svela" id="configuratore" hidden>
+        <form class="passi" onsubmit="return false" aria-label="Scegli il pacchetto">
+          <fieldset class="scelta">
+            <legend><span>1.</span>Vuoi anche i consigli alimentari?</legend>
+            <div class="linee">
+              <div><input type="radio" name="linea" id="linea-A" value="A"><label for="linea-A"><b>Sì · A</b><small>Scheda + piano con consigli alimentari</small></label></div>
+              <div><input type="radio" name="linea" id="linea-B" value="B"><label for="linea-B"><b>No · B</b><small>Solo scheda di allenamento</small></label></div>
+            </div>
+          </fieldset>
+          <fieldset class="scelta">
+            <legend><span>2.</span>Quante sessioni PT vuoi fare insieme?</legend>
+            <div class="sessioni" id="sessioni"></div>
+            <p class="legenda" id="legenda"><i aria-hidden="true"></i>Scelta equilibrata</p>
+          </fieldset>
+        </form>
+
+        <aside class="risultato" aria-labelledby="ris-titolo">
+          <div class="ris-testa">
+            <p class="ris-etichetta" id="ris-titolo">Il tuo pacchetto</p>
+            <p class="ris-badge" id="ris-badge" hidden>Scelta equilibrata</p>
+          </div>
+          <div class="ris-riga" aria-live="polite" aria-atomic="true">
+            <span class="ris-codice" id="ris-codice"></span>
+            <span class="ris-prezzo" id="ris-prezzo"></span>
+          </div>
+          <p class="ris-durata">per 4 settimane</p>
+          <ul class="ris-lista" id="ris-lista"></ul>
+          <a class="btn btn-nero" id="ris-cta" data-contatto="pacchetto" href="https://www.instagram.com/gianlucaantonelli.pt/" target="_blank" rel="noopener"><span data-contatto-testo>Chiedi info su Instagram</span></a>
+          <div class="ris-mosse" id="ris-mosse"></div>
+          <p class="ris-editoriale" id="ris-editoriale" hidden>“Scelta equilibrata” è un mio suggerimento, non un dato oggettivo: scheda e due sessioni insieme, a metà del listino della linea B. Scegli in base a ciò che ti serve.</p>
+        </aside>
+      </div>
+
+      <div class="listino svela">
+        <h3 id="tutti">Tutti i 12 pacchetti</h3>
+        <p class="js-solo">Tocca un prezzo per selezionarlo.</p>
+        <table class="tabella" aria-labelledby="tutti">
+          <thead>
+            <tr>
+              <th scope="col" style="width:30%">Sessioni PT</th>
+              <th scope="col">Linea A<br><span style="font-weight:500">con consigli alimentari</span></th>
+              <th scope="col">Linea B<br><span style="font-weight:500">solo allenamento</span></th>
+            </tr>
+          </thead>
+          <tbody id="listino">
+            <tr><th scope="row">Nessuna</th>
+              <td><button class="cella" type="button" data-linea="A" data-n="0" data-prezzo="70"><small>A</small><b>70 €</b></button></td>
+              <td><button class="cella" type="button" data-linea="B" data-n="0" data-prezzo="40"><small>B</small><b>40 €</b></button></td></tr>
+            <tr><th scope="row">1 sessione</th>
+              <td><button class="cella" type="button" data-linea="A" data-n="1" data-prezzo="100"><small>A1</small><b>100 €</b></button></td>
+              <td><button class="cella" type="button" data-linea="B" data-n="1" data-prezzo="75"><small>B1</small><b>75 €</b></button></td></tr>
+            <tr><th scope="row">2 sessioni</th>
+              <td><button class="cella" type="button" data-linea="A" data-n="2" data-prezzo="125"><small>A2</small><b>125 €</b></button></td>
+              <td><button class="cella" type="button" data-linea="B" data-n="2" data-prezzo="100"><small>B2</small><b>100 €</b></button></td></tr>
+            <tr><th scope="row">3 sessioni</th>
+              <td><button class="cella" type="button" data-linea="A" data-n="3" data-prezzo="150"><small>A3</small><b>150 €</b></button></td>
+              <td><button class="cella" type="button" data-linea="B" data-n="3" data-prezzo="125"><small>B3</small><b>125 €</b></button></td></tr>
+            <tr><th scope="row">4 sessioni</th>
+              <td><button class="cella" type="button" data-linea="A" data-n="4" data-prezzo="170"><small>A4</small><b>170 €</b></button></td>
+              <td><button class="cella" type="button" data-linea="B" data-n="4" data-prezzo="140"><small>B4</small><b>140 €</b></button></td></tr>
+            <tr><th scope="row">5 sessioni</th>
+              <td><button class="cella" type="button" data-linea="A" data-n="5" data-prezzo="180"><small>A5</small><b>180 €</b></button></td>
+              <td><button class="cella" type="button" data-linea="B" data-n="5" data-prezzo="160"><small>B5</small><b>160 €</b></button></td></tr>
+          </tbody>
+        </table>
+        <p class="tabella-nota">Prezzi per pacchetto di 4 settimane. Ogni pacchetto include assistenza via messaggi WhatsApp.</p>
+        <div class="azioni-listino">
+          <button class="btn btn-linea" type="button" data-stampa>Salva in PDF o stampa</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione come" id="come-funziona">
+    <div class="wrap">
+      <div class="svela">
+        <p class="occhiello">Come funziona</p>
+        <h2 class="display">Tre passi, <span class="giallo">poi ti alleni.</span></h2>
+      </div>
+      <ol class="passi-come svela" style="padding:0;margin-bottom:0;list-style:none">
+        <li><i aria-hidden="true">1</i><div><h3>Scegli il pacchetto</h3><p>Linea A o B, da 0 a 5 sessioni. Se hai dubbi, scrivimi prima di decidere.</p></div></li>
+        <li><i aria-hidden="true">2</i><div><h3>Scrivimi</h3><p>Il pulsante prepara già il messaggio con il pacchetto che hai scelto. Devi solo inviarlo.</p></div></li>
+        <li><i aria-hidden="true">3</i><div><h3>Parti per 4 settimane</h3><p>Segui la scheda personalizzata e fai le sessioni PT previste dal tuo pacchetto.</p></div></li>
+      </ol>
+      <div class="assistenza svela">
+        <div><span>Sempre incluso</span><h3>Assistenza via messaggi WhatsApp</h3><p>Hai un dubbio mentre segui la scheda? Mi scrivi. Vale per tutti i 12 pacchetti.</p></div>
+        <div><span>Quando possibile</span><h3>Di persona in sede</h3><p>Oltre alle sessioni PT del pacchetto, quando è possibile ti seguo anche di persona presso McFIT Roma Ostiense. Non è una presenza garantita.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione galleria-sez">
+    <div class="wrap galleria-testa svela">
+      <div>
+        <p class="occhiello">Dal mio Instagram</p>
+        <h2 class="display">Vieni a <span class="giallo">vedere.</span></h2>
+      </div>
+      <a class="btn btn-linea" href="https://www.instagram.com/gianlucaantonelli.pt/" target="_blank" rel="noopener">@gianlucaantonelli.pt</a>
+    </div>
+    <div class="galleria svela" tabindex="0" role="region" aria-label="Foto da Instagram, scorri in orizzontale">
+      <a href="https://www.instagram.com/p/DIZbscwOhLo/" target="_blank" rel="noopener"><img src="assets/img/galleria-specchio-900.webp" width="900" height="876" loading="lazy" decoding="async" alt="Gianluca in canotta blu, selfie allo specchio in spogliatoio"></a>
+      <a href="https://www.instagram.com/p/DGVMQdsyIjA/" target="_blank" rel="noopener"><img src="assets/img/galleria-thailandia-900.webp" width="900" height="1115" loading="lazy" decoding="async" alt="Gianluca in posa a doppio bicipite, all'aperto in Thailandia"></a>
+      <a href="https://www.instagram.com/p/DSC80PpiAn5/" target="_blank" rel="noopener"><img src="assets/img/galleria-posa-900.webp" width="900" height="1103" loading="lazy" decoding="async" alt="Gianluca a torso nudo in posa laterale, su sfondo chiaro"></a>
+      <a href="https://www.instagram.com/p/DGp2VM1yGxc/" target="_blank" rel="noopener"><img src="assets/img/galleria-piscina-828.webp" width="828" height="774" loading="lazy" decoding="async" alt="Gianluca in posa in una piscina affacciata sul mare"></a>
+    </div>
+  </section>
+
+  <section class="sezione faq" id="domande">
+    <div class="wrap faq-griglia">
+      <div class="svela">
+        <p class="occhiello">Domande</p>
+        <h2 class="display">Prima di <span class="giallo">scrivermi.</span></h2>
+      </div>
+      <div class="svela">
+        <details><summary>Qual è la differenza tra linea A e linea B?</summary><p>La linea A aggiunge il piano con consigli alimentari. Il resto è uguale: scheda personalizzata, da 0 a 5 sessioni PT, assistenza WhatsApp, 4 settimane.</p></details>
+        <details><summary>I consigli alimentari sono una dieta?</summary><p>No. Sono un piano con consigli alimentari, non una dieta personalizzata né un piano dietetico clinico.</p></details>
+        <details><summary>Devo per forza fare sessioni con te?</summary><p>No. I pacchetti A e B da 70 € e 40 € non hanno sessioni PT: ti alleni in autonomia con la scheda e l'assistenza via messaggi.</p></details>
+        <details><summary>Quanto dura un pacchetto?</summary><p>4 settimane, per tutti i 12 pacchetti.</p></details>
+        <details><summary>L'assistenza di persona è garantita?</summary><p>No. L'assistenza via messaggi WhatsApp è sempre inclusa. Quella di persona presso McFIT Roma Ostiense c'è quando è possibile.</p></details>
+        <details><summary>L'abbonamento alla palestra è compreso?</summary><p>Non è tra le voci dei pacchetti. Chiedimi conferma prima di scegliere.</p></details>
+        <details><summary>Quanto dura una sessione e quando si fa?</summary><p>Scrivimi: ti do i dettagli su durata e orari prima che tu decida.</p></details>
+        <details><summary>Come acquisto?</summary><p>Da questa pagina non si paga nulla. Scrivimi con il pacchetto che hai scelto e ti spiego come partire.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="finale" id="contatto">
+    <div class="wrap">
+      <div>
+        <h2>Non allenarti a caso. Scrivimi.</h2>
+        <p id="finale-testo">Scegli un pacchetto o chiedimi quale fa per te.</p>
+        <p class="solo-stampa contatti-stampa">Instagram: instagram.com/gianlucaantonelli.pt<span id="stampa-wa"></span></p>
+      </div>
+      <div class="finale-cta">
+        <a class="btn btn-nero" id="finale-cta" data-contatto="auto" href="https://www.instagram.com/gianlucaantonelli.pt/" target="_blank" rel="noopener"><span data-contatto-testo>Scrivimi su Instagram</span></a>
+        <a class="btn btn-linea" href="#pacchetti">Rivedi i pacchetti</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <div class="piede-su">
+      <a class="marchio" href="#top"><i aria-hidden="true"></i>Gianluca Antonelli</a>
+      <div class="piede-link">
+        <a href="https://www.instagram.com/gianlucaantonelli.pt/" target="_blank" rel="noopener">Instagram</a>
+        <button type="button" data-stampa>Salva in PDF</button>
+      </div>
+    </div>
+    <small>Servizio indipendente di Gianluca Antonelli, personal trainer. McFIT è citata solo come sede di riferimento: questo non è un sito ufficiale McFIT e non indica partnership o autorizzazioni. Foto dal profilo Instagram di Gianluca Antonelli.
+    <!-- Da completare con Partita IVA e link all'informativa privacy, se dovuti. --></small>
+  </div>
+</footer>
+
+<div class="fissa" id="fissa" aria-hidden="true">
+  <p class="fissa-info"><b id="fissa-titolo">Da 40 €</b><span id="fissa-sotto">12 pacchetti · 4 settimane</span></p>
+  <a class="btn btn-giallo" id="fissa-cta" href="#pacchetti" tabindex="-1">Scegli</a>
+</div>
+<div class="avviso" id="avviso" role="status"></div>
+
+<script>
+/* ────────── DA CONFIGURARE ──────────
+   Numero WhatsApp in formato internazionale, solo cifre. Esempio: '393331234567'.
+   Finché resta vuoto, i pulsanti portano ai messaggi diretti Instagram. */
+const WHATSAPP_NUMBER = '';
+const INSTAGRAM_USER = 'gianlucaantonelli.pt';
+/* I prezzi si cambiano solo nella tabella qui sopra (attributo data-prezzo e testo). */
+
+(function () {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const FERMO = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const euro = n => n + ' €';
+  const codice = (l, n) => l + (n || '');
+  const nomeSess = n => n === 1 ? '1 sessione PT' : n + ' sessioni PT';
+
+  const prezzi = { A: [], B: [] };
+  $$('#listino .cella').forEach(c => { prezzi[c.dataset.linea][+c.dataset.n] = +c.dataset.prezzo; });
+
+  const stato = { linea: 'B', n: 2, scelto: false };
+  const ICONA = {
+    si: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 8 15.5 17 5.5" fill="none" stroke="currentColor" stroke-width="3"/></svg>',
+    no: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>'
+  };
+
+  /* Contatti */
+  const haWa = () => /^\d{8,15}$/.test(WHATSAPP_NUMBER);
+  function messaggio(conPacchetto) {
+    if (!conPacchetto) return 'Ciao Gianluca, ho visto la tua pagina e vorrei qualche informazione sui pacchetti.';
+    const { linea, n } = stato;
+    const cosa = linea === 'A' ? 'scheda e consigli alimentari' : 'solo scheda';
+    const sess = n ? nomeSess(n) : 'nessuna sessione PT';
+    return `Ciao Gianluca, ho visto la tua pagina e vorrei informazioni sul pacchetto ${codice(linea, n)} (${cosa}, ${sess}, ${euro(prezzi[linea][n])} per 4 settimane).`;
+  }
+  const conPacchetto = tipo => tipo === 'pacchetto' || (tipo === 'auto' && stato.scelto);
+  function aggiornaContatti() {
+    $$('[data-contatto]').forEach(a => {
+      const testo = $('[data-contatto-testo]', a);
+      const pac = conPacchetto(a.dataset.contatto);
+      const canale = haWa() ? 'WhatsApp' : 'Instagram';
+      a.href = haWa()
+        ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(messaggio(pac))}`
+        : `https://ig.me/m/${INSTAGRAM_USER}`;
+      if (testo) testo.textContent = pac ? `Chiedi info su ${codice(stato.linea, stato.n)} via ${canale}` : `Scrivimi su ${canale}`;
+    });
+    const fc = $('#fissa-cta');
+    if (stato.scelto) {
+      fc.href = $('#finale-cta').href;
+      fc.textContent = haWa() ? 'WhatsApp' : 'Instagram';
+      fc.target = '_blank'; fc.rel = 'noopener';
+      fc.dataset.messaggio = '1';
+    }
+  }
+  let timerAvviso;
+  function avviso(t) {
+    const a = $('#avviso'); a.textContent = t; a.classList.add('su');
+    clearTimeout(timerAvviso); timerAvviso = setTimeout(() => a.classList.remove('su'), 4200);
+  }
+  /* Senza numero WhatsApp: copia il messaggio, così basta incollarlo nella chat Instagram */
+  document.addEventListener('click', e => {
+    const a = e.target.closest('[data-contatto], #fissa-cta[data-messaggio]');
+    if (!a || haWa()) return;
+    const pac = a.id === 'fissa-cta' || conPacchetto(a.dataset.contatto);
+    if (navigator.clipboard) navigator.clipboard.writeText(messaggio(pac)).then(() => avviso('Messaggio copiato: incollalo nella chat Instagram.')).catch(() => {});
+  });
+
+  /* Selettore */
+  const sessioniBox = $('#sessioni');
+  sessioniBox.innerHTML = [0, 1, 2, 3, 4, 5].map(n =>
+    `<div><input type="radio" name="sessioni" id="s${n}" value="${n}"><label for="s${n}"><i class="ses-tag" aria-hidden="true"></i><span class="ses-n">${n}</span><span class="ses-p" data-p="${n}"></span></label></div>`).join('');
+
+  let prezzoMostrato = null, raf, fine;
+  function animaPrezzo(v) {
+    const el = $('#ris-prezzo');
+    cancelAnimationFrame(raf);
+    clearTimeout(fine);
+    if (FERMO || prezzoMostrato === null) { el.textContent = euro(v); prezzoMostrato = v; return; }
+    const da = prezzoMostrato, t0 = performance.now(), dur = 320;
+    prezzoMostrato = v;
+    clearTimeout(fine);
+    /* Il prezzo finale non dipende dall'animazione, che si ferma se la scheda è in secondo piano */
+    fine = setTimeout(() => { cancelAnimationFrame(raf); el.textContent = euro(v); }, dur + 40);
+    (function passo(t) {
+      const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = euro(Math.round(da + (v - da) * e));
+      if (k < 1) raf = requestAnimationFrame(passo);
+    })(t0);
+  }
+
+  function disegna() {
+    const { linea, n } = stato, altra = linea === 'A' ? 'B' : 'A', p = prezzi[linea][n];
+    const equilibrata = linea === 'B' && n === 2;
+
+    $(`#linea-${linea}`).checked = true;
+    $(`#s${n}`).checked = true;
+    $$('[data-p]').forEach(el => { el.textContent = euro(prezzi[linea][+el.dataset.p]); });
+    $$('#sessioni > div').forEach((d, i) => d.classList.toggle('equilibrata', linea === 'B' && i === 2));
+    $('#legenda').classList.toggle('vista', linea === 'B');
+
+    const cod = $('#ris-codice');
+    cod.textContent = codice(linea, n);
+    if (!FERMO) { cod.classList.remove('ris-pulsa'); void cod.offsetWidth; cod.classList.add('ris-pulsa'); }
+    animaPrezzo(p);
+    $('#ris-badge').hidden = !equilibrata;
+    $('#ris-editoriale').hidden = !equilibrata;
+
+    const voci = [
+      ['si', 'Scheda di allenamento personalizzata'],
+      linea === 'A' ? ['si', 'Piano con consigli alimentari'] : ['no', 'Consigli alimentari non inclusi'],
+      n ? ['si', nomeSess(n) + ' nelle 4 settimane'] : ['no', 'Nessuna sessione PT: ti alleni in autonomia'],
+      ['si', 'Assistenza via messaggi WhatsApp'],
+      ['si', 'Di persona presso McFIT Roma Ostiense, quando possibile']
+    ];
+    $('#ris-lista').innerHTML = voci.map(([t, s]) => `<li class="${t === 'no' ? 'no' : ''}">${ICONA[t]}<span>${s}</span></li>`).join('');
+
+    const delta = prezzi[altra][n] - p, mosse = [];
+    const segno = d => (d > 0 ? '+' : '−') + Math.abs(d) + ' €';
+    mosse.push(`<button type="button" data-vai="${altra}${n}"><span>${altra === 'A' ? 'Con i consigli alimentari' : 'Senza consigli alimentari'}: ${codice(altra, n)}</span><b>${segno(delta)}</b></button>`);
+    if (n < 5) mosse.push(`<button type="button" data-vai="${linea}${n + 1}"><span>Una sessione in più: ${codice(linea, n + 1)}</span><b>${segno(prezzi[linea][n + 1] - p)}</b></button>`);
+    $('#ris-mosse').innerHTML = mosse.join('');
+
+    $$('#listino .cella').forEach(c => {
+      const sel = c.dataset.linea === linea && +c.dataset.n === n;
+      c.setAttribute('aria-pressed', sel);
+      c.setAttribute('aria-label', `Seleziona ${codice(c.dataset.linea, +c.dataset.n)}, ${euro(c.dataset.prezzo)}`);
+    });
+
+    if (stato.scelto) {
+      $('#fissa-titolo').textContent = `${codice(linea, n)} · ${euro(p)}`;
+      $('#fissa-sotto').textContent = '4 settimane';
+      $('#finale-testo').textContent = `Hai scelto ${codice(linea, n)}, ${euro(p)} per 4 settimane. Il messaggio è già pronto.`;
+      try { history.replaceState(null, '', `?pacchetto=${codice(linea, n)}${location.hash}`); } catch (_) {}
+    }
+    aggiornaContatti();
+  }
+
+  function scegli(linea, n) { stato.linea = linea; stato.n = n; stato.scelto = true; disegna(); }
+
+  $$('input[name=linea]').forEach(i => i.addEventListener('change', () => scegli(i.value, stato.n)));
+  sessioniBox.addEventListener('change', e => scegli(stato.linea, +e.target.value));
+  $('#ris-mosse').addEventListener('click', e => {
+    const b = e.target.closest('[data-vai]'); if (!b) return;
+    const v = b.dataset.vai; scegli(v[0], +(v[1] || 0));
+  });
+  $('#listino').addEventListener('click', e => {
+    const c = e.target.closest('.cella'); if (!c) return;
+    scegli(c.dataset.linea, +c.dataset.n);
+    $('#configuratore').scrollIntoView({ behavior: FERMO ? 'auto' : 'smooth', block: 'start' });
+  });
+  $$('[data-scegli-linea]').forEach(b => b.addEventListener('click', () => {
+    scegli(b.dataset.scegliLinea, stato.n);
+    $('#pacchetti').scrollIntoView({ behavior: FERMO ? 'auto' : 'smooth' });
+  }));
+
+  /* Pacchetto da link condiviso: ?pacchetto=A3 */
+  const dalLink = new URLSearchParams(location.search).get('pacchetto');
+  if (dalLink && /^[AB][1-5]?$/.test(dalLink)) { stato.linea = dalLink[0]; stato.n = +(dalLink[1] || 0); stato.scelto = true; }
+
+  $('#configuratore').hidden = false;
+  disegna();
+
+  /* Stampa / PDF: apre le FAQ per il foglio e le richiude dopo */
+  $$('[data-stampa]').forEach(b => b.addEventListener('click', () => window.print()));
+  let aperte = [];
+  addEventListener('beforeprint', () => { aperte = $$('details:not([open])'); aperte.forEach(d => { d.open = true; }); });
+  addEventListener('afterprint', () => aperte.forEach(d => { d.open = false; }));
+  if (haWa()) $('#stampa-wa').textContent = ` · WhatsApp: +${WHATSAPP_NUMBER}`;
+
+  /* Comparsa allo scorrimento */
+  const svele = $$('.svela');
+  if ('IntersectionObserver' in window && !FERMO) {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+    svele.forEach(s => io.observe(s));
+  } else svele.forEach(s => s.classList.add('in'));
+  addEventListener('beforeprint', () => svele.forEach(s => s.classList.add('in')));
+
+  /* Barra mobile: compare dopo l'hero, sparisce dove c'è già il pulsante grande */
+  const fissa = $('#fissa'), fcta = $('#fissa-cta');
+  if ('IntersectionObserver' in window) {
+    const visti = new Set();
+    const ioF = new IntersectionObserver(es => {
+      es.forEach(e => e.isIntersecting ? visti.add(e.target) : visti.delete(e.target));
+      const su = visti.size === 0;
+      fissa.classList.toggle('su', su);
+      fissa.setAttribute('aria-hidden', !su);
+      fcta.tabIndex = su ? 0 : -1;
+    });
+    [$('.hero'), $('#configuratore'), $('#contatto')].forEach(s => ioF.observe(s));
+  }
+})();
+</script>
+</body>
+</html>
